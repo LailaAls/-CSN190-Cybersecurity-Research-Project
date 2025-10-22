@@ -1,0 +1,93 @@
+### Topic 1: Small Business Network Security
+1. Feasibility Assessment
+-Technical Requirements:
+● Tools Needed: I’ll need to use Nmap and OpenVAS to scan networks for weaknesses.
+● Skills Needed: Basic computer and network knowledge
+● Current Skill Level: 3/5
+● Need to Learn: How to install, scan, and read reports from these tools
+● Resources Available: Yes.
+Project Plan:
+● Build/Test/Deploy: Run network scans and check for security weaknesses
+● Tools Needed: Nmap, OpenVAS, VirtualBox.
+● Timeline (8–10 weeks): Yes.
+2. Learning and Growth Potential
+● New Skills: Learn how to scan a network, understand ports, and find security risks
+● Challenges: Reading and understanding scan results
+● Career Alignment: Great for cybersecurity or IT support careers
+● Excitement: I like hands-on tools and learning how hackers find weak spots.
+● Passion Level: High — cybersecurity is interesting and useful in real life.
+3. Realistic Plannin# 
+● Ambitious Goal: Create a full guide showing small businesses how to use both tools
+● Realistic Target: Successfully run both Nmap and OpenVAS and compare results
+● Minimum Viable Outcome: Run at least one tool and explain what it finds
+### Topic 2: ChatGPT and AI Safety
+1. Feasibility Assessment
+-Technical Requirements:
+● Tools Needed: Guardrails AI, Adversarial Robustness Toolbox (ART)
+● Skills Needed: Python and basic coding knowledge
+● Current Skill Level: 2/5
+● Need to Learn: How AI safety tools work and how to test them
+● Resources Available: Yes.
+Project Plan:
+● Build/Test/Deploy: Try simple tests on ChatGPT or sample AI models
+● Tools Needed: Guardrails AI, Jupyter Notebook, or Google Colab
+● Timeline (8–10 weeks): Might be tight — tools are more advanced
+2. Learning and Growth Potential
+● New Skills: Learn about AI safety and how to test for safe AI responses
+● Challenges: High technical level and setup.
+● Career Alignment: Useful if I want to go into AI or machine learning later.
+● Excitement: AI safety is a growing field
+3. Realistic Planning
+● Ambitious Goal: Test both Guardrails and ART tools on real AI outputs
+● Realistic Target: Learn to run simple AI safety checks.
+● Minimum Viable Outcome: Research how AI safety tools work and write a summary
+Criteria Topic 1: Small Business
+Network Security
+Topic 2: ChatGPT
+and AI Safety
+Feasibility/Acce
+ssibility
+5 3
+Personal
+Interest
+5 4
+Learning
+Potential
+4 5
+Career
+Relevance
+5 4
+TOTAL 19 16
+
+- Final Topic Choice: Small Business Network Security
+I decided to go with Small Business Network Security for my final topic. I think this topic is more
+beginner-friendly and something I can actually test and understand. Tools like Nmap and
+OpenVAS help find weak spots in a network, which is important for small businesses that don’t
+have big IT teams. I already have a little experience from my CSN 150 class, where I learned
+how to use Nmap to scan networks and find open ports. This project will let me build on that
+experience while learning more about network safety and testing.
+This topic feels realistic because I can download and try the tools myself. Setting them up might
+take some work, but there are plenty of tutorials online to help. It’s also easier to see real results
+— I can scan a small test network and see what it finds. I like that this connects to real-world
+problems and helps protect people and businesses from hackers. That makes it both useful and
+interesting to me.
+My goals:
+● Ambitious Goal: Build a small network and use OpenVAS and Nmap to find and fix
+security issues.
+● Realistic Target: Learn how to scan safely and write a report about what I found.
+● Minimum Outcome: Show that I can use at least one tool (like Nmap) and explain how it
+helps small businesses stay safe.
+By doing this project, I’ll learn more about network security, scanning tools, and how to
+understand scan results. Even if I don’t finish everything, I’ll still gain hands-on skills that are
+useful for IT or cybersecurity. That’s why I think this topic is the best choice for me.
+
+
+
+
+
+
+
+
+
+
+● Passion Level: Moderate — interesting but more complex for a beginner
