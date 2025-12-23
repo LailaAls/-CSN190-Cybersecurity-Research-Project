@@ -1,0 +1,112 @@
+Scanning My Home Network with Nmap: A Beginner’s Journey into Network Security
+1. Introduction
+Many people assume that home networks are safe simply because they are private. Before this project, I believed that having a Wi-Fi password was enough to protect my devices. This assignment challenged that assumption by showing how much information can be gathered using freely available tools.
+
+In this project, I used Nmap, a powerful open-source network scanning tool, to analyze my own home network. The goal was to identify active devices, discover open ports, enumerate running services, and detect potential vulnerabilities using Nmap’s scripting engine.
+
+This article documents my hands-on experience performing real-world network reconnaissance as a cybersecurity student. By the end of this article, readers will understand how network scanning works, why exposed services matter, and how even small home networks can introduce security risks if not properly configured.
+
+2. Purpose and Background
+I chose Nmap because it is one of the most widely used tools in cybersecurity. Penetration testers, system administrators, and security analysts rely on Nmap for discovering hosts, identifying services, and detecting vulnerabilities.
+
+The main problem Nmap helps solve is visibility. Organizations and individuals cannot secure what they do not know exists. Through this project, I wanted to understand how attackers might view a network from the outside and how defenders can use the same tools to identify weaknesses before they are exploited.
+
+At first, I expected to find minimal information. However, once scanning began, I realized how much data can be revealed without logging into any device. This experience highlighted the importance of proactive security testing and reinforced why reconnaissance is often the first stage of a cyberattack.
+
+3. Installation and Setup
+Prerequisites
+macOS
+Terminal access
+Nmap version 7.98 or later
+Administrative (sudo) privileges
+Permission to scan the network
+Installing Nmap
+brew install nmap
+
+
+4. Using the Software: Step-by-Step Walkthrough
+Step 1: Identify Local IP Address
+ifconfig
+From the output, I identified my local IP address:
+inet 192.168.1.87
+
+<img width="1440" height="900" alt="Screenshot 2025-12-23 at 1 10 37 AM" src="https://github.com/user-attachments/assets/30169dd4-d21f-4741-94a3-d58301af0435" />
+
+Step 2: Test Network Connectivity
+ping 192.168.1.1
+This confirmed that my router was reachable and responding to requests.
+
+<img width="1440" height="900" alt="Screenshot 2025-12-22 at 11 27 38 PM" src="https://github.com/user-attachments/assets/e0e145f1-cb61-4c46-94d1-25f159a407ce" />
+
+Step 3: Discover Active Hosts
+nmap -sn 192.168.1.0/24
+This scan identified active devices on my network, including my router, laptop, and mobile devices.
+
+<img width="1440" height="900" alt="Screenshot 2025-12-23 at 12 17 56 AM" src="https://github.com/user-attachments/assets/c8a96362-35b6-45f1-b005-b592fa9985bc" />
+
+Step 4: Scan My Own Device
+nmap 192.168.1.87
+All scanned ports were closed, meaning no unnecessary services were exposed on my system.
+
+Step 5: Service and Version Detection
+nmap -sV 192.168.1.1
+This scan revealed services such as HTTP, HTTPS, and UPnP running on the router.
+
+<img width="1440" height="900" alt="Screenshot 2025-12-22 at 11 32 46 PM" src="https://github.com/user-attachments/assets/732df579-7e49-4b8c-ad4c-f136c799e936" />
+
+Step 6: Vulnerability Scanning with NSE
+sudo nmap -sV --script vuln 192.168.1.1
+The scan reported:
+Slowloris Denial-of-Service (CVE-2007-6750) – Likely Vulnerable
+HTTP Method Tampering – Authentication bypass risk
+
+5. Research Insights
+
+According to OWASP documentation, improper handling of HTTP methods can allow attackers to bypass authentication controls. This directly relates to the HTTP method tampering vulnerability identified during scanning.
+
+Additionally, Slowloris remains an effective denial-of-service technique against misconfigured web servers. Research confirms that many embedded devices and routers still lack proper protections against such attacks, reinforcing the importance of regular vulnerability assessments.
+
+6. Challenges and Problem-Solving
+
+One challenge I encountered was NSE script execution errors. Some scripts failed during initial runs. After troubleshooting, I learned that running Nmap with sudo was required for certain scripts to function correctly.
+
+Another challenge involved interpreting filtered ports. Through research, I learned that filtered ports often indicate firewall protections rather than vulnerabilities, highlighting the importance of understanding scan results rather than assuming all findings are security issues.
+
+7. Expected Results
+
+If performed correctly, this project should result in:
+
+Identification of the local IP address
+
+Successful ping responses
+
+Discovery of active hosts
+
+Enumeration of open ports and services
+
+Detection of at least one potential vulnerability
+
+These results demonstrate how reconnaissance reveals a network’s exposure.
+
+8. Conclusion and Future Applications
+
+This project provided valuable hands-on experience with real-world network scanning techniques. I learned how attackers gather information and how defenders can use the same tools to strengthen security.
+
+In the future, I plan to expand this work by analyzing traffic with Wireshark, exploring additional Nmap scripts, and testing other network devices. This experience strengthened my technical skills, troubleshooting ability, and documentation practices, all of which are essential in cybersecurity roles.
+
+9. Resources and Links
+
+Nmap Official Website: https://nmap.org
+
+Nmap Documentation: https://nmap.org/docs.html
+
+OWASP Testing Guide: https://owasp.org
+
+CVE-2007-6750: https://cve.mitre.org
+
+Ethical Disclaimer
+
+All scans were performed on devices I own or have permission to test. Unauthorized scanning of networks is illegal and unethical.
+
+
+
