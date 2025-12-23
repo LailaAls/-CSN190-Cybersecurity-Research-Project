@@ -8,23 +8,24 @@
 ---
 
 ## Project Overview
-This project explores how open-source cybersecurity tools can be used to assess the security of home and small business networks. Using Nmap, I performed host discovery, service enumeration, and vulnerability scanning to understand how attackers and defenders view network exposure. The project emphasizes hands-on learning, documentation, and ethical security testing.
+This project demonstrates how open-source cybersecurity tools can be used to analyze the security of home and small business networks. Using Nmap, I performed host discovery, service enumeration, and vulnerability detection to understand how exposed a typical network can be. The focus of the project is ethical network scanning, documentation, and learning how attackers and defenders analyze networks.
 
 ---
 
 ## Software / Tools Used
 - **Nmap** (v7.98)
+- **Nmap NSE (Nmap Scripting Engine)**
 - macOS Terminal
 - Bash shell
 - GitHub (documentation & version control)
-- OWASP & NIST security resources
 
 ---
 
 ## Key Deliverables
 -  Medium Article Draft: `final-paper/MEDIUM-ARTICLE-DRAFT-V1.md`
 -  Nmap Tutorial: `research-notes/6.3-TUTORIAL.md`
--  GitHub Research Documentation
+-  Network Scan Results & Analysis
+
 
 ---
 
@@ -38,17 +39,19 @@ This project explores how open-source cybersecurity tools can be used to assess 
 
 ## Getting Started
 To replicate this project:
-1. Install Nmap on macOS using Homebrew  
-2. Identify your local IP address with `ifconfig`  
-3. Use Nmap to scan your local network  
-4. Analyze services and vulnerabilities ethically  
+1. Install Nmap on macOS using Homebrew
+2. Identify your local IP address using `ifconfig`
+3. Test connectivity using `ping`
+4. Discover hosts using `nmap -sn`
+5. Enumerate services using `nmap -sV`
+6. Identify vulnerabilities using Nmap NSE scripts
 
-Refer to `research-notes/6.3-TUTORIAL.md` for step-by-step instructions.
+Refer to `research-notes/6.3-TUTORIAL.md` for full instructions.
 
 ---
 
 ## Results Summary
-Through this project, I learned how easily network information can be discovered using freely available tools. I successfully identified active devices, open ports, running services, and potential vulnerabilities on my local network. This experience strengthened my understanding of network security fundamentals and defensive testing techniques.
+Through this project, I learned how easily network information can be discovered using freely available tools. I identified active devices, open ports, running services, and potential vulnerabilities on my local network using Nmap. This project strengthened my understanding of network security fundamentals and ethical vulnerability assessment.
 
 ---
 
